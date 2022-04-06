@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Dear Diary",
+      title: "GoogleAuthService",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xff145c9E),

@@ -4,7 +4,6 @@ import 'package:dear_diary_fixed/authenticate.dart';
 import 'package:dear_diary_fixed/pages/loginwidget.dart';
 import 'package:dear_diary_fixed/pages/setup/choose.dart';
 import 'package:dear_diary_fixed/pages/signupwidget.dart';
-import 'package:dear_diary_fixed/pages/verifyemail.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

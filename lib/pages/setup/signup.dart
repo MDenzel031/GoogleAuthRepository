@@ -57,8 +57,8 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('SignUp'),
           backgroundColor: Colors.lightBlue,
@@ -207,7 +207,6 @@ class _SignUpState extends State<SignUp> {
                   ],
                 ),
               ),
-      ),
     );
   }
 }

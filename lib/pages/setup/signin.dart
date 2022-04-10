@@ -53,29 +53,23 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Dear Diary'),
           backgroundColor: Colors.lightBlue,
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => {log("asdaddasdsadsad")},
-          tooltip: 'This is a tooltip',
-        ),
         body: isLoading
             ? loadingScreen()
             : SingleChildScrollView(
+              
                 child: Column(
-                  mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
                       alignment: Alignment.center,
                       margin: EdgeInsets.only(top: 20),
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         gradient: LinearGradient(colors: [
@@ -223,7 +217,6 @@ class _SignInState extends State<SignIn> {
                   ],
                 ),
               ),
-      ),
     );
   }
 
